@@ -1,0 +1,99 @@
+/* 
+Theme Name: Responsive Child Theme
+Theme URI: http://cyberchimps.com/guide/child-theme-example/
+Description: Responsive Child Theme
+Template: responsive
+Version: 1.0.0
+Author: CyberChimps
+Author URI: https://cyberchimps.com/
+License: GNU General Public License
+License URI: license.txt
+
+*/
+
+/* =Start From Here
+-------------------------------------------------------------- */
+
+.skip-container {
+	background-color: white;
+}
+
+
+
+
+
+#container {
+	max-width: 100%;
+	padding: 0;
+	background-color: rgb(62,193,197);
+}
+
+#header {
+	background-color: white;
+}
+
+#logo {
+	margin: 0 0 20px 20px;
+	width: 20%;
+}
+
+.top-menu > li:first-child > a {
+	display: block;
+	background-image: url("http://students.iam.colum.edu/~danielle.thomas1/wp-content/uploads/people-128.png");
+	background-size: cover;
+	background-color: rgb(62,193,197);
+	height: 90px;
+	width: 90px;
+	margin-right: 20px;
+	padding: 5px 5px 0 5px;
+	text-indent: -9999999px;
+	border: 5px dotted whitesmoke;
+	border-radius: 65px;
+}
+
+.front-page #wrapper {
+	background-color: rgb(62,193,197);
+}
+
+
+
+.site_title {
+	color: white;
+	text-align: center;
+
+}
+
+
+div#bp_core_members_widget-2 {
+	background-color: rgb(62,193,197);
+}
+
+
+.widget-wrapper {
+	border: 0;
+}
+
+
+.widget.buddypress ul.item-list img.avatar {
+	height: 90px;
+	width: 90px;
+	border-radius: 50px;
+	border: 5px solid rgb(255, 203, 8);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*The last 29 days of the month are the hardest."- Nikola Tesla*/
