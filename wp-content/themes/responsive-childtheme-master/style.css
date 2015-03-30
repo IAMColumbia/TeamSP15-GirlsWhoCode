@@ -18,14 +18,10 @@ License URI: license.txt
 	background-color: white;
 }
 
-
-
-
-
 #container {
 	max-width: 100%;
 	padding: 0;
-	background-color: rgb(62,193,197);
+	background-color: white;
 }
 
 #header {
@@ -41,7 +37,7 @@ License URI: license.txt
 	display: block;
 	background-image: url("http://students.iam.colum.edu/~danielle.thomas1/wp-content/uploads/people-128.png");
 	background-size: cover;
-	background-color: rgb(62,193,197);
+	background-color: white;
 	height: 90px;
 	width: 90px;
 	margin-right: 20px;
@@ -52,27 +48,21 @@ License URI: license.txt
 }
 
 .front-page #wrapper {
-	background-color: rgb(62,193,197);
+	background-color: white;
 }
-
-
 
 .site_title {
 	color: white;
 	text-align: center;
-
 }
-
 
 div#bp_core_members_widget-2 {
 	background-color: rgb(62,193,197);
 }
 
-
 .widget-wrapper {
 	border: 0;
 }
-
 
 .widget.buddypress ul.item-list img.avatar {
 	height: 90px;
@@ -81,19 +71,20 @@ div#bp_core_members_widget-2 {
 	border: 5px solid rgb(255, 203, 8);
 }
 
+#buddypress a.disabled {
+	color: #6E6B6B;
+}
+
+#buddypress a.disabled:hover {
+	color: #6E6B6B;
+}
 
 
+li.vcard{
+border-radius: 50%;
+height:200px;
+width: 200px;
+border-color:red;
 
+}
 
-
-
-
-
-
-
-
-
-
-
-
-/*The last 29 days of the month are the hardest."- Nikola Tesla*/

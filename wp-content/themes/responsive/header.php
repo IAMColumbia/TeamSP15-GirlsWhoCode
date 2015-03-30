@@ -38,6 +38,7 @@ if ( !defined( 'ABSPATH' ) ) {
 
 		<title><?php wp_title( '&#124;', true, 'right' ); ?></title>
 
+		<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
 		<link rel="profile" href="http://gmpg.org/xfn/11"/>
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>"/>
 

@@ -8,6 +8,7 @@ AJAX SEARCH
     padding-right: 10px;
     padding-left: 1px;
     box-sizing: border-box;
+    width: 50px;
 }
 .bboss_ajax_search_item .item-avatar img {
     vertical-align: middle;
@@ -79,6 +80,9 @@ AJAX SEARCH
     border-bottom: 0;
     position: relative;
     top: -1px;
+}
+.bb-global-search-ac.ui-menu .ui-menu-item .bboss_ajax_search_item.noresult {
+    padding: 13px 7px 11px;
 }
 .bb-global-search-ac.ui-menu .ui-menu-item:last-child .bboss_ajax_search_item a {
     padding: 9px 10px;

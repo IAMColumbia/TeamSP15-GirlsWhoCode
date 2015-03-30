@@ -1,0 +1,40 @@
+/*--------------------------------------------------------------
+This Changelog shows the detailed history of releases.
+----------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+1.1 - January 9, 2014
+1.0 - September 25, 2010
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+1.1
+--------------------------------------------------------------*/
+
+FEATURES:
+
+  Compatibility with BuddyPress 1.9
+
+CHANGED FILES:
+
+  _changelog.txt (new)
+  _license.txt (renamed from license.txt)
+  _readme.txt (renamed from readme.txt)
+  bp-featured-members-loader.php
+  bp-featured-members-widget.php
+
+/*--------------------------------------------------------------
+1.0
+--------------------------------------------------------------*/
+
+FEATURES:
+
+  Initial Release.
+
+FILES:
+
+  bp-featured-members-loader.php
+  bp-featured-members-widget.php
+  license.txt
+  readme.txt
+
