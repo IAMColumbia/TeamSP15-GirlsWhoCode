@@ -39,3 +39,11 @@ function responsive_free_get_option( $option, $default = false ) {
 
 	return $default;
 }
+
+function test_func(){
+  echo "<div>Testing featured members</div>";
+  // echo do_shortcode('[bfm view="slider" max="5" filter="active" astyle="round_0" asize="150"]');
+}
+add_shortcode('bfm', 'test_func');
+
+//place [featured]
