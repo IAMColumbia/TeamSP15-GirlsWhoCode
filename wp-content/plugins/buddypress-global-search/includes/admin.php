@@ -336,6 +336,7 @@ if (!class_exists('BuddyBoss_Global_Search_Admin')):
 			foreach( $items as $item=>$label ){
 				$checked = !empty( $items_to_search ) && in_array( $item, $items_to_search ) ? ' checked' : '';
 				echo "<label><input type='checkbox' value='{$item}' name='buddyboss_global_search_plugin_options[items-to-search][]' {$checked}>{$label}</label><br>";
+				do_action( 'bboss_global_search_settings_item_'.$item, $items_to_search );
 			}
 			
 			/**

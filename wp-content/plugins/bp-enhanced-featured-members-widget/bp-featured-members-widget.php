@@ -27,24 +27,27 @@ class BP_Featured_Members_Widget extends WP_Widget {
 	 */
     function widget( $args, $instance ) {		
         global $bp;
-        
+        $x = 0;
         extract( $args );
         $title = apply_filters( 'widget_title', $instance[ 'title' ] );
 		$members = empty( $instance[ 'members_to_feature' ] ) ? '' : $instance[ 'members_to_feature' ];
 		$members = explode( ",", $members );
 		//***$avsize = empty( $instance[ 'featured_members_avsize' ] ) ? '' : $instance[ 'featured_members_avsize' ];
 
+		$max_members = array_slice($members, 0, 5);   // returns "a", "b", and "c"
+
+
 		echo $before_widget;
 		
 		if( $title )
 			echo $before_title . $title . $after_title;
 	
-		if ( $members[0] != "" ) : 
+		if ( $max_members[0] != "" ) : 
 	
 		?>
 
 			<ul id="featured-members-list" class="item-list">
-				<?php foreach ( $members as $member ) : ?>
+				<?php foreach ( $max_members as $member ) : ?>
 					
 					<li class="vcard">
 					
@@ -56,11 +59,11 @@ class BP_Featured_Members_Widget extends WP_Widget {
 						<div class="item">
 							<div class="item-title fn">
 								<a href="<?php echo bp_core_get_user_domain( $member_id ) ?>" title="<?php echo bp_core_get_user_displayname( $member_id ) ?>"><?php echo bp_core_get_user_displayname( $member_id ) ?></a>
-							</div>
-							<div class="item-meta">
-								<span class="activity"><?php bp_last_activity( $member_id ); ?></span>
-							</div>
+                            </div>
+                            <a href="<?php echo bp_core_get_user_domain( $member_id ) ?>"><?php echo xprofile_get_field_data( 'Program City', $member_id ); ?></a>
+					<a href="<?php echo bp_core_get_user_domain( $member_id ) ?>"><?php echo xprofile_get_field_data( 'Program Year', $member_id ); ?></a>
 						</div>
+						
 					
 					</li>
 					

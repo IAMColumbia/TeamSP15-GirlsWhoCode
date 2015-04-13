@@ -5,7 +5,7 @@
  * Description: Ajax powered global BuddyPress search
  * Author:      BuddyBoss
  * Author URI:  http://buddyboss.com
- * Version:     1.0.8
+ * Version:     1.1.0
  */
 // Exit if accessed directly
 if (!defined('ABSPATH'))
@@ -18,7 +18,7 @@ if (!defined('ABSPATH'))
  */
 // Codebase version
 if (!defined('BUDDYBOSS_GLOBAL_SEARCH_PLUGIN_VERSION')) {
-	define('BUDDYBOSS_GLOBAL_SEARCH_PLUGIN_VERSION', '1.0.8');
+	define('BUDDYBOSS_GLOBAL_SEARCH_PLUGIN_VERSION', '1.1.0');
 }
 
 // Database version

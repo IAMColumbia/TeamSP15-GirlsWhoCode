@@ -14,41 +14,91 @@ License URI: license.txt
 /* =Start From Here
 -------------------------------------------------------------- */
 
+.responsive_current_menu_item{
+ 	background-color: #34c0c4;
+}
+
+
+ul {
+	list-style-type: none;
+}
+
+body{
+	background-size: 200px;
+	font-family: 'Dosis', sans-serif;
+}
 .skip-container {
 	background-color: white;
 }
-
+#wrapper{
+	margin-top: 0px;
+	border:none;
+	background-color: rgba(255,255,255,0.4);
+}
 #container {
 	max-width: 100%;
 	padding: 0;
-	background-color: white;
+	margin-left: 0;
 }
-
 #header {
 	background-color: white;
 }
+.title_top{
+	padding: 18px 0px 0px 10px;
+	color: #754d25;
+	float: left;
+	font-size: 36px;
+	letter-spacing: 2px;
+	font-weight: lighter;
+}
+.span_directory{
+	line-height: 65px;
+	font-size: 38px;
+	letter-spacing: 16px;
+	font-weight: 700;
+}
 
-#logo {
+#login-trigger{
+	cursor: pointer;
+	position: absolute;
+	right: 20px;
+	top:210px;
+	z-index: 3000;
+	background: #34c0c4; 
+    text-align: center;	
+    letter-spacing: 1px;
+    font-size: 16px;
+    cursor: pointer;
+    -webkit-transition: background-color 0.5s ease;
+    -moz-transition: background-color 0.5s ease;
+    -o-transition: background-color 0.5s ease;
+    transition: background-color 0.5s ease;
+    color:#fff;
+    border-style: solid;
+    border-color: #fff;
+    border-radius: 4px;
+    outline: none;
+}
+#login-trigger:hover{
+	background-color: #24878A; 
+}
+
+#bp-login-widget-form{
+	display: none;
+	width: 100%;
+	float: none;
+	position: absolute;
+	left:0;
+	z-index: 2000;
+	margin: 0;
+	top: 218px;
+	background-color: rgba(52,192,196, 0.8);
+}
+
+#logo img{
+	float: left;
 	margin: 0 0 20px 20px;
-	width: 20%;
-}
-
-.top-menu > li:first-child > a {
-	display: block;
-	background-image: url("http://students.iam.colum.edu/~danielle.thomas1/wp-content/uploads/people-128.png");
-	background-size: cover;
-	background-color: white;
-	height: 90px;
-	width: 90px;
-	margin-right: 20px;
-	padding: 5px 5px 0 5px;
-	text-indent: -9999999px;
-	border: 5px dotted whitesmoke;
-	border-radius: 65px;
-}
-
-.front-page #wrapper {
-	background-color: white;
+	width: 30%;
 }
 
 .site_title {
@@ -59,6 +109,7 @@ License URI: license.txt
 div#bp_core_members_widget-2 {
 	background-color: rgb(62,193,197);
 }
+
 
 .widget-wrapper {
 	border: 0;
@@ -75,16 +126,243 @@ div#bp_core_members_widget-2 {
 	color: #6E6B6B;
 }
 
+
 #buddypress a.disabled:hover {
 	color: #6E6B6B;
 }
 
 
-li.vcard{
-border-radius: 50%;
-height:200px;
-width: 200px;
-border-color:red;
-
+div#bp_featured_members-2 {
+  width: 80%;
+  margin: 0 auto;
 }
 
+div#extended-featured-widget-2 {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 25px;
+}
+
+.menu {
+	position: relative;
+	background-color: #34c0c4;
+	background-image:none;
+	padding-right: 100px;
+	z-index: 2500;
+	box-shadow: 0 4px 4px 0px rgba(10,10,10,0.2);
+}
+
+.menu li{
+	float:right;
+	letter-spacing: 2px;
+}
+
+.menu a {
+    border-left:0px solid #fff;
+    background-color: #34c0c4;
+    color:#fff;
+    text-shadow:0 0px 0px #fff;
+    font-size: 16px;
+}
+
+#menu-item-276 a:hover{
+	color: #ffcb08;
+}
+#menu-item-275 a:hover{
+	color: #34c0c4;
+}
+#menu-item-277 a:hover{
+	color: #754d25;
+}
+#menu-item-278 a:hover{
+	color: #e94c2a;
+}
+
+#menu-item-276.current-menu-item a{
+	color: #ffcb08;
+}
+#menu-item-275.current-menu-item a{
+	color: #34c0c4;
+}
+#menu-item-277.current-menu-item a{
+	color: #754d25;
+}
+#menu-item-278.current-menu-item a{
+	color: #e94c2a;
+}
+.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children.menu-item-276.current_page_item a{
+	color: #ffcb08;
+}
+.menu .current_page_item a{
+    background-color: #fff;
+    background-image:none;
+}
+
+.menu a:hover{
+	background-color: #ffffff;
+	background-image:none;
+	color:#34c0c4;
+}
+
+/*This is what you are using to hide the top widget with the login stuff*/
+
+/*********************************************
+/*
+/*	 			FRONT-PAGE.PHP
+/*			(FEATURED ALUMNI AREA)
+/*
+/*********************************************/
+li.vcard{
+	border-radius: 50%;
+	border-color:red;
+	float: left;
+	margin-left: 40px;
+}
+
+
+.vcard img {
+	height: 150px;
+	width: 150px;
+}
+
+.vcard .item {
+	text-align: center;
+}
+
+img.avatar {
+	 -webkit-border-radius: 50%;
+	 -moz-border-radius: 50%;
+	 -ms-border-radius: 50%;
+	 -o-border-radius: 50%;
+	 border-radius: 50%;
+ }
+
+/*featured project*/
+img.alignleft{
+  width: 350px;
+}
+
+
+/*********************************************
+/*
+/*	 			GROUPS-LOOP.PHP
+/*
+/*********************************************/
+
+#groups-dir-list ul.item-list li {
+	float: left;
+	margin-bottom: 30px;
+	margin-right: 59px;
+	width: 150px;
+}
+
+#groups-dir-list ul.item-list li .item-avatar, #groups-dir-list ul.item-list li img.avatar {
+	height: 150px;
+	width: 150px;
+}
+
+#groups-dir-list #groups-list li .item-title {
+  width: 100%;
+  font-size: 100%;
+  text-align: center;
+}
+
+#buddypress ul.item-list li div.action {
+  position: relative;
+  top: 0;
+  text-align: center;
+}
+
+/*********************************************
+/*
+/*	  			MEMBERS-LOOP.PHP
+/*
+/*********************************************/
+
+.col-620 {
+	width: 80%;
+	margin-left: 10%;
+}
+
+#buddypress div.directory-members-item-list-tabs {
+	background: transparent;
+	clear: left;
+	position: relative;
+	overflow: hidden;
+	top: -45px;
+}
+
+#buddypress #admins-list li, #buddypress #mods-list li, #buddypress #members-list li {
+	float: left;
+	margin-bottom: 30px;
+	margin-right: 62px;
+	/*height: 60px;*/
+}
+
+#members-dir-list ul.item-list li .item-avatar, #members-dir-list ul.item-list li img.avatar {
+	height: 150px;
+	width: 150px;
+}
+
+#members-dir-list #members-list li .item-title {
+	text-align: center;
+	width: 100%;
+}
+
+.item-program-city-and-year {
+	text-align: center;
+}
+
+/*********************************************
+/*
+/*				PROFILE.PHP
+/*			  (badges result)
+/*
+/*********************************************/
+
+.badgeos-no-results .badgeos-nomination-form legend {
+  padding: 0;
+}
+
+/*********************************************
+/*
+/*				STUDENT-PROJECTS.PHP
+/*
+/*********************************************/
+
+.listing-item {
+	margin-top: 45px;
+	float: left;
+	width: 32%;
+	margin-left: 10px;
+}
+
+.listing-item a.title {
+	font-size: 25px;
+	/* float: left; */
+	/* clear: both; */
+}
+
+img.attachment-thumbnail.wp-post-image{
+    margin: 10px 10px 5px 5px;
+	border-radius: 75px;
+}
+
+.listing-item .excerpt {
+	margin: 10px 0px 5px 0px;
+	float: left;
+}
+
+span.excerpt-dash {
+	/*float: left;*/
+	display: none;
+}
+
+.listing-item .read-more {
+	float: right;
+	margin-right: 100px;
+}
+.avatar {
+	background:url("http://www.goodspark.com/gwc/wp-content/uploads/2015/02/default_avatar.png") 0 0px no-repeat!important;
+	background-size:100%, 100%!important;
+}

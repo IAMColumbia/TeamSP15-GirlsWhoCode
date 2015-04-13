@@ -21,11 +21,6 @@
 
 	<div id="pag-top" class="pagination">
 
-		<div class="pag-count" id="member-dir-count-top">
-
-			<?php bp_members_pagination_count(); ?>
-
-		</div>
 
 		<div class="pagination-links" id="member-dir-pag-top">
 
@@ -67,19 +62,15 @@
 
 			<div class="item">
 				<div class="item-title">
-					<a href="<?php bp_member_permalink(); ?>"><?php bp_member_profile_data( 'field=First Name' ); ?><?php echo ' '; ?><?php bp_member_profile_data( 'field=Last Initial' ); ?></a>
-					<a href="<?php bp_member_permalink(); ?>"><?php bp_member_profile_data( 'field=Program City' ); ?></a>
-					<a href="<?php bp_member_permalink(); ?>"><?php bp_member_profile_data( 'field=College' ); ?></a>
+					<a href="<?php bp_member_permalink(); ?>"><?php bp_member_profile_data( 'field=First Name' ); ?></a>
+                </div>
+                <div class="item-program-city-and-year">
+					<a id="item-program-city" href="<?php bp_member_permalink(); ?>"><?php bp_member_profile_data( 'field=Program City' ); ?></a>
+					<a id="item-program-year" href="<?php bp_member_permalink(); ?>"><?php bp_member_profile_data( 'field=Program Year' ); ?></a>
+                </div>
+					
 
-					<?php if ( bp_get_member_latest_update() ) : ?>
-
-						<span class="update"> <?php bp_member_latest_update(); ?></span>
-
-					<?php endif; ?>
-
-				</div>
-
-				<div class="item-meta"><span class="activity"><?php bp_member_last_active(); ?></span></div>
+			<!-- <div class="item-meta"><span class="activity"><?php //bp_member_last_active(); ?></span></div> -->
 
 				<?php do_action( 'bp_directory_members_item' ); ?>
 
@@ -94,13 +85,6 @@
 				?>
 			</div>
 
-			<div class="action">
-
-				<?php do_action( 'bp_directory_members_actions' ); ?>
-
-			</div>
-
-			<div class="clear"></div>
 		</li>
 		<?php }; ?>
 	<?php endwhile; ?>
@@ -113,11 +97,7 @@
 
 	<div id="pag-bottom" class="pagination">
 
-		<div class="pag-count" id="member-dir-count-bottom">
-
-			<?php bp_members_pagination_count(); ?>
-
-		</div>
+		
 
 		<div class="pagination-links" id="member-dir-pag-bottom">
 

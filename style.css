@@ -1,0 +1,219 @@
+/* 
+Theme Name: Responsive Child Theme
+Theme URI: http://cyberchimps.com/guide/child-theme-example/
+Description: Responsive Child Theme
+Template: responsive
+Version: 1.0.0
+Author: CyberChimps
+Author URI: https://cyberchimps.com/
+License: GNU General Public License
+License URI: license.txt
+
+*/
+
+/* =Start From Here
+-------------------------------------------------------------- */
+body{
+	background-size: 200px;
+	font-family: 'Dosis', sans-serif;
+}
+.skip-container {
+	background-color: white;
+}
+#wrapper{
+	margin-top: 0px;
+	border:none;
+	background-color: rgba(255,255,255,0.4);
+}
+#container {
+	max-width: 100%;
+	padding: 0;
+	margin-left: 0;
+}
+#header {
+	background-color: white;
+}
+.title_top{
+	padding: 18px 0px 0px 10px;
+	color: #754d25;
+	float: left;
+	font-size: 36px;
+	letter-spacing: 2px;
+	font-weight: lighter;
+}
+.span_directory{
+	line-height: 65px;
+	font-size: 38px;
+	letter-spacing: 16px;
+	font-weight: 700;
+}
+
+
+#logo img{
+	float: left;
+	margin: 0 0 20px 20px;
+	width: 30%;
+}
+
+.site_title {
+	color: white;
+	text-align: center;
+}
+
+div#bp_core_members_widget-2 {
+	background-color: rgb(62,193,197);
+}
+
+.widget-wrapper {
+	border: 0;
+}
+
+.widget.buddypress ul.item-list img.avatar {
+	height: 90px;
+	width: 90px;
+	border-radius: 50px;
+	border: 5px solid rgb(255, 203, 8);
+}
+
+#buddypress a.disabled {
+	color: #6E6B6B;
+}
+
+#buddypress a.disabled:hover {
+	color: #6E6B6B;
+}
+
+div#bp_featured_members-2 {
+  width: 80%;
+  margin: 0 auto;
+}
+
+div#extended-featured-widget-2 {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 25px;
+}
+
+.menu {
+	position: relative;
+	background-color: #34c0c4;
+	background-image:none;
+	padding-right: 100px;
+	z-index: 2500;
+	box-shadow: 0 4px 4px 0px rgba(10,10,10,0.2);
+}
+
+.menu li{
+	float:right;
+	letter-spacing: 2px;
+}
+
+.menu a {
+    border-left:0px solid #fff;
+    background-color: #34c0c4;
+    color:#fff;
+    text-shadow:0 0px 0px #fff;
+    font-size: 16px;
+}
+
+#menu-item-278 a:hover{
+	color: #ffcb08;
+}
+#menu-item-277 a:hover{
+	color: #34c0c4;
+}
+#menu-item-275 a:hover{
+	color: #754d25;
+}
+#menu-item-276 a:hover{
+	color: #e94c2a;
+}
+
+#menu-item-278.current-menu-item a{
+	color: #ffcb08;
+}
+#menu-item-277.current-menu-item a{
+	color: #34c0c4;
+}
+#menu-item-275.current-menu-item a{
+	color: #754d25;
+}
+#menu-item-276.current-menu-item a{
+	color: #e94c2a;
+}
+
+.menu .current_page_item a{
+    background-color: #fff;
+    background-image:none;
+}
+
+.menu a:hover{
+	background-color: #ffffff;
+	background-image:none;
+	color:#34c0c4;
+}
+
+/*This is the Form / LOGIN CSS*/
+#login-trigger{
+	cursor: pointer;
+	position: absolute;
+	right: 20px;
+	top:183px;
+	z-index: 3000;
+	background: #34c0c4; 
+    text-align: center;	
+    letter-spacing: 1px;
+    font-size: 16px;
+    cursor: pointer;
+    -webkit-transition: background-color 0.5s ease;
+    -moz-transition: background-color 0.5s ease;
+    -o-transition: background-color 0.5s ease;
+    transition: background-color 0.5s ease;
+    color:#fff;
+    border-style: solid;
+    border-color: #fff;
+    border-radius: 4px;
+    outline: none;
+}
+#login-trigger:hover{
+	background-color: #24878A; 
+}
+
+#bp-login-widget-form{
+	display: none;
+}
+
+#bp-login-widget-user-login{
+	border: none;
+	box-shadow: none;
+	width: 250px;
+}
+
+.widget_bp_core_login_widget{
+	width: 100%;
+	float: none;
+	position: absolute;
+	left:0;
+	z-index: 2000;
+	margin: 0;
+	top: 218px;
+	background-color: rgba(52,192,196, 0.8);
+}
+
+/*This is body style*/
+li.vcard{
+border-radius: 50%;
+height:200px;
+width: 200px;
+border-color:red;
+
+}
+
+img.avatar {
+ -webkit-border-radius: 50%;
+ -moz-border-radius: 50%;
+ -ms-border-radius: 50%;
+ -o-border-radius: 50%;
+ border-radius: 50%;
+ }
+

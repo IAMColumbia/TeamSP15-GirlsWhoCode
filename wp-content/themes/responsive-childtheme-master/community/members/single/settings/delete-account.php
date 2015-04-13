@@ -1,5 +1,5 @@
 <?php do_action( 'bp_before_member_settings_template' ); ?>
-
+<h4>Delete Account</h4>
 <div id="message" class="info">
 
 	<?php if ( bp_is_my_profile() ) : ?>

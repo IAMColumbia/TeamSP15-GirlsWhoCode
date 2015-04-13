@@ -7,7 +7,7 @@ if ( bp_has_profile( 'profile_group_id=' . bp_get_current_profile_group_id() ) )
 
 	<?php do_action( 'bp_before_profile_field_content' ); ?>
 
-		<h4><?php printf( __( "Editing '%s' Profile Group", "buddypress" ), bp_get_the_profile_group_name() ); ?></h4>
+		<h4><?php printf( __( "Profile Settings", "buddypress" ), bp_get_the_profile_group_name() ); ?></h4>
 
 		<?php if ( bp_profile_has_multiple_groups() ) : ?>
 			<ul class="button-nav">
@@ -20,8 +20,7 @@ if ( bp_has_profile( 'profile_group_id=' . bp_get_current_profile_group_id() ) )
 		<div class="clear"></div>
 
 		<?php while ( bp_profile_fields()) : bp_the_profile_field(); ?>
-			<?php if (bp_get_the_profile_field_name() != 'First Name' && bp_get_the_profile_field_name() != 'Last Initial') { ?>
-
+<?php if ((bp_get_the_profile_field_name() != 'First Name') && (bp_get_the_profile_field_name() != 'Last Name') ) { ?>
 			<div<?php bp_field_css_class( 'editfield' ); ?>>
 
 				<?php
@@ -55,7 +54,7 @@ if ( bp_has_profile( 'profile_group_id=' . bp_get_current_profile_group_id() ) )
 
 				<p class="description"><?php bp_the_profile_field_description(); ?></p>
 			</div>
-<?php }; ?>
+            <?php } ?>
 		<?php endwhile; ?>
 
 	<?php do_action( 'bp_after_profile_field_content' ); ?>
@@ -71,5 +70,10 @@ if ( bp_has_profile( 'profile_group_id=' . bp_get_current_profile_group_id() ) )
 </form>
 
 <?php endwhile; endif; ?>
-
+<?php 
+	bp_get_template_part( 'members/single/settings/general'); 
+	bp_get_template_part( 'members/single/settings/profile');
+	bp_get_template_part( 'members/single/settings/delete-account' );
+?>
 <?php do_action( 'bp_after_profile_edit_content' ); ?>
+

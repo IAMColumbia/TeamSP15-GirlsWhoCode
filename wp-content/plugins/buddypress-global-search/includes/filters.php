@@ -19,6 +19,28 @@ function bb_global_search_default_items_to_search( $value ){
 		 */
 		$value = array( 'posts', 'members' );
 	}
+	
+	/*
+	 * If member search is turned on, but none of wp_user table fields or xprofile fields are selected,
+	 * we'll force username and nicename fields
+	 */
+	if( in_array( 'members', $value ) ){
+		// Is any wp_user table colum or xprofile field selected?
+		$field_selected = false;
+		foreach( $value as $item_to_search ){
+			if( strpos( $item_to_search, 'member_field_' )===0 || strpos( $item_to_search, 'xprofile_field_' )===0 ){
+				$field_selected = true;
+				break;
+			}
+		}
+		
+		//if not, lets add username and nicename to default items to search
+		if( !$field_selected ){
+			$value[] = 'member_field_user_login';
+			$value[] = 'member_field_user_nicename';
+		}
+	}
+	
 	return $value;
 }
 add_filter( 'buddyboss_global_search_option_items-to-search', 'bb_global_search_default_items_to_search' );

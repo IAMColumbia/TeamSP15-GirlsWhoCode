@@ -42,11 +42,15 @@ if ( !defined( 'ABSPATH' ) ) {
 		<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/custom-members-dir.js"></script>
 		<link rel="profile" href="http://gmpg.org/xfn/11"/>
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>"/>
+		<link href='http://fonts.googleapis.com/css?family=Dosis:400,600,700' rel='stylesheet' type='text/css'>
+
 
 		<?php wp_head(); ?>
+		<!--<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/custom.css" type="text/css" media="all">-->
 	</head>
 
 <body <?php body_class(); ?>>
+
 
 <?php responsive_container(); // before container hook ?>
 <div id="container" class="hfeed">
@@ -70,11 +74,22 @@ if ( !defined( 'ABSPATH' ) ) {
 
 		<?php responsive_in_header(); // header hook ?>
 
+		<!--show 'fake' login button to trigger real login form-->
+		
+		<?php if ( is_user_logged_in() ) {
+		} else {
+			echo '<div class="login-area">';
+			echo '<button id="login-trigger">Login</button>';
+			echo '</div>';
+		}?>
+
+		
 		<?php if ( get_header_image() != '' ) : ?>
 
 			<div id="logo">
-				<a href="<?php echo home_url( '/' ); ?>"><img src="<?php header_image(); ?>" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="<?php bloginfo( 'name' ); ?>"/></a>
-			</div><!-- end of #logo -->
+				<a href="<?php echo home_url( '/' ); ?>"><img src="<?php header_image(); ?>" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="<?php bloginfo( 'name' ); ?>"/>
+				<h1 class="title_top"> STUDENT & ALUMNI<br><span class="span_directory">DIRECTORY</span></h1></a>
+			</div>
 
 		<?php endif; // header image was removed ?>
 
@@ -104,6 +119,7 @@ if ( !defined( 'ABSPATH' ) ) {
 		} ?>
 
 		<?php responsive_header_bottom(); // after header content hook ?>
+
 
 	</div><!-- end of #header -->
 <?php responsive_header_end(); // after header container hook ?>

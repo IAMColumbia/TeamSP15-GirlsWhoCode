@@ -97,7 +97,7 @@ AJAX SEARCH
 /* +++++++++++++++++++++++++++++++++++++++
 SEARCH RESULTS PAGE
 +++++++++++++++++++++++++++++++++++++++ */
- #buddypress .results-group ul.item-list {
+#buddypress .results-group ul.item-list {
     border-top: none !important;
 }
 div.search_results h2.results-group-title {
@@ -137,6 +137,11 @@ div.search_results h2.results-group-title {
 body.search-results #buddypress #mobile-item-nav ul li a, 
 #buddypress .search_filters.item-list-tabs ul li a {
     text-transform: capitalize;
+}
+
+/* Classifieds plugin */
+#buddypress .results-group ul.awpcp_ad_listing-list div img {
+    margin-top: 20px;
 }
 
 /* Auto Complete Menu */

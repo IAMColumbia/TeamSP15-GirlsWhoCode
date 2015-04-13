@@ -162,7 +162,13 @@ function badgeos_ajax_get_achievements() {
 			// Setup our completion message
 			$achievements .= '<div class="badgeos-no-results">';
 			if ( 'completed' == $filter ) {
-				$achievements .= '<p>' . sprintf( __( 'No completed %s to display at this time.', 'badgeos' ), strtolower( $post_type_plural ) ) . '</p>';
+				if (bp_loggedin_user_id() != $user_id && bp_loggedin_user_id() == 0) {
+					$achievements .= '';
+				}else if (bp_loggedin_user_id() == $user_id){
+					$achievements .=  do_shortcode('[badgeos_nomination]');
+				}else{
+					$achievements .= '<p>' . sprintf( __( 'No completed %s to display at this time.', 'badgeos' ), strtolower( $post_type_plural ) ) . '</p>';
+				}
 			}else{
 				$achievements .= '<p>' . sprintf( __( 'No %s to display at this time.', 'badgeos' ), strtolower( $post_type_plural ) ) . '</p>';
 			}

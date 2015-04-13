@@ -11,7 +11,7 @@
 
 <div class="item-list-tabs no-ajax" id="subnav" role="navigation">
 	<ul>
-		<?php bp_get_options_nav(); ?>
+		<?php bp_get_custom_options_nav(); ?>
 	</ul>
 </div><!-- .item-list-tabs -->
 
@@ -49,6 +49,11 @@
 		bp_get_template_part( 'members/single/plugins' );
 		break;
 endswitch; ?>
+
+
+		
+[badgeos_achievements_list limit="10" show_filter="false" show_search="false" orderby="menu_order" order="ASC" user_id="<?php echo bp_displayed_user_id() ?>" wpms="false"]
+
 </div><!-- .profile -->
 
 <?php do_action( 'bp_after_profile_content' ); ?>
