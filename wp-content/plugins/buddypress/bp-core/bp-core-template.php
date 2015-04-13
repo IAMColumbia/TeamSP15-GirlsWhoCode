@@ -72,7 +72,15 @@ function bp_get_options_nav( $parent_slug = '' ) {
 		$list_type = bp_is_group() ? 'groups' : 'personal';
 
 		// echo out the final list item
+		if (bp_loggedin_user_id() != bp_displayed_user_id()){
+		if ($subnav_item['slug'] != 'public'){
 		echo apply_filters( 'bp_get_options_nav_' . $subnav_item['css_id'], '<li id="' . $subnav_item['css_id'] . '-' . $list_type . '-li" ' . $selected . '><a id="' . $subnav_item['css_id'] . '" href="' . $subnav_item['link'] . '">' . $subnav_item['name'] . '</a></li>', $subnav_item, $selected_item );
+		}
+		}
+		if (bp_loggedin_user_id() == bp_displayed_user_id()){
+		echo apply_filters( 'bp_get_options_nav_' . $subnav_item['css_id'], '<li id="' . $subnav_item['css_id'] . '-' . $list_type . '-li" ' . $selected . '><a id="' . $subnav_item['css_id'] . '" href="' . $subnav_item['link'] . '">' . $subnav_item['name'] . '</a></li>', $subnav_item, $selected_item );
+		
+		}
 	}
 }
 

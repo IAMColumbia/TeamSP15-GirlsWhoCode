@@ -1,5 +1,5 @@
 <?php do_action( 'bp_before_member_settings_template' ); ?>
-
+<h4>General Settings</h4>
 <form action="<?php echo bp_displayed_user_domain() . bp_get_settings_slug() . '/general'; ?>" method="post" class="standard-form" id="settings-form">
 
 	<?php if ( !is_super_admin() ) : ?>
@@ -17,7 +17,7 @@
 	<div id="pass-strength-result"></div>
 	<input type="password" name="pass2" id="pass2" size="16" value="" class="settings-input small password-entry-confirm" <?php bp_form_field_attributes( 'password' ); ?>/> &nbsp;<?php _e( 'Repeat New Password', 'buddypress' ); ?>
 
-	<?php do_action( 'bp_core_general_settings_before_submit' ); ?>
+	<?php //do_action( 'bp_core_general_settings_before_submit' ); ?>
 
 	<div class="submit">
 		<input type="submit" name="submit" value="<?php esc_attr_e( 'Save Changes', 'buddypress' ); ?>" id="submit" class="auto" />

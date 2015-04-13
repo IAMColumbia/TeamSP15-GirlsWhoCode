@@ -241,7 +241,7 @@ if (!class_exists('BBoss_Global_Search_Helper')):
 				$type_mem = "";
 				foreach( $this->search_results['all']['items'] as $item_id=>$item ){
 					$new_row = array( 'value'=>$item['html'] );
-					$type_label = apply_filters( 'bboss_global_search_label_search_type', ucfirst($item['type']) );
+					$type_label = apply_filters( 'bboss_global_search_label_search_type', $item['type'] );
 					$new_row['type'] = $item['type'];
 					$new_row['type_label'] = "";
 					$new_row['value'] = $item['html'];

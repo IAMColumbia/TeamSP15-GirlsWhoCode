@@ -1,5 +1,4 @@
 <div id="buddypress">
-
 	<?php do_action( 'bp_before_member_home_content' ); ?>
 
 	<div id="item-header" role="complementary">
@@ -8,24 +7,13 @@
 
 	</div><!-- #item-header -->
 
-	<div id="item-nav">
-		<div class="item-list-tabs no-ajax" id="object-nav" role="navigation">
-			<ul>
-
-				<?php bp_get_displayed_user_nav(); ?>
-
-				<?php do_action( 'bp_member_options_nav' ); ?>
-
-			</ul>
-		</div>
-	</div><!-- #item-nav -->
 
 	<div id="item-body" role="main">
 
 		<?php do_action( 'bp_before_member_body' );
 
 		if ( bp_is_user_activity() || !bp_current_component() ) :
-			bp_get_template_part( 'members/single/activity' );
+			//bp_get_template_part( 'members/single/activity' );
 
 		elseif ( bp_is_user_blogs() ) :
 			bp_get_template_part( 'members/single/blogs'    );

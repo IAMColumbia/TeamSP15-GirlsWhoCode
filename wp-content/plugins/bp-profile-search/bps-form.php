@@ -63,7 +63,7 @@ if ($mode != 'bps_auto')  echo "<div id='buddypress'>";
 	if ($mode == 'bps_auto')
 	{
 ?>
-	<div class="item-list-tabs bps_header">
+	<div class="item-list-tabs bps_header directory-members-item-list-tabs">
 	<ul>
 	<li><?php echo $bps_options['header']; ?></li>
 <?php if ($bps_options['toggle'] == 'Enabled') { ?>
@@ -111,7 +111,7 @@ echo "<div class='editfield field_$id field_$name$alt'>";
 		if (empty ($label))
 			$label = $field->name;
 		else
-echo "<input type='hidden' name='label_$id' value='$label' />";
+echo "<input type='hidden' name='label_$id' value='". esc_attr ($label). "' />";
 
 		if (empty ($desc))
 			$desc = $field->description;

@@ -4,7 +4,7 @@ Donate link: http://www.buddyboss.com/donate/
 Tags: buddypress, search, social networking, activity, profiles, messaging, friends, groups, forums, notifications, settings, social, community, networks, networking
 Requires at least: 3.8
 Tested up to: 4.1.1
-Stable tag: 1.0.8
+Stable tag: 1.1.0
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -70,6 +70,15 @@ For BuddyPress customizations, submit your request at [BuddyBoss](http://www.bud
 
 == Changelog ==
 
+= 1.1.0 = 
+* Member search by xProfile fields (username, email, etc.)
+* Properly handle hidden groups
+* Remove dependency on BP activity component
+* Added Italian translations - credits to Massimiliano Napoli
+
+= 1.0.9 = 
+* Added support for Another Wordpress Classifieds Plugin (AWPCP)
+
 = 1.0.8 = 
 * Multisite compatibility, no longer requires network activation
 * Added links to Group titles in dropdown
@@ -108,7 +117,7 @@ For BuddyPress customizations, submit your request at [BuddyBoss](http://www.bud
 * Minor bug fixes
 
 = 0.0.2 =
-* Removed empty a tag from autosuggest dropdown items
+* Removed empty <a> tag from autosuggest dropdown items
 * Made pagination links dynamic, instead of page refresh
 
 = 0.0.1 =

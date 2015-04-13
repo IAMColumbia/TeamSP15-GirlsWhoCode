@@ -41,7 +41,10 @@ if (!class_exists('BuddyBoss_Global_Search_Plugin')):
 			'template',
 			'filters',
 			'class.BBoss_Global_Search_Helper',
+			
+			//extensions
 			'plugins/search-cpt/index',
+			'plugins/awpcp/index',
 		);
 
 		/**
@@ -409,8 +412,8 @@ if (!class_exists('BuddyBoss_Global_Search_Plugin')):
 		 */
 		public function assets(){
 			wp_enqueue_style( 'jquery-ui', $this->assets_url . '/css/jquery-ui.min.css', '1.11.2' );
-			//wp_enqueue_style( 'buddypress-global-search', $this->assets_url . '/css/buddypress-global-search.css', '1.0.8' );
-			wp_enqueue_style( 'buddypress-global-search', $this->assets_url . '/css/buddypress-global-search.min.css', '1.0.8' );
+			//wp_enqueue_style( 'buddypress-global-search', $this->assets_url . '/css/buddypress-global-search.css', '1.0.9' );
+			wp_enqueue_style( 'buddypress-global-search', $this->assets_url . '/css/buddypress-global-search.min.css', '1.0.9' );
 			
 			
 			wp_enqueue_script( 'jquery-ui-autocomplete' );

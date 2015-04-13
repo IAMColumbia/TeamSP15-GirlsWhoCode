@@ -1,5 +1,5 @@
 <?php do_action( 'bp_before_member_settings_template' ); ?>
-
+<h4>Visibility Settings</h4>
 <form action="<?php echo trailingslashit( bp_displayed_user_domain() . bp_get_settings_slug() . '/profile' ); ?>" method="post" class="standard-form" id="settings-form">
 
 	<?php if ( bp_xprofile_get_settings_fields() ) : ?>

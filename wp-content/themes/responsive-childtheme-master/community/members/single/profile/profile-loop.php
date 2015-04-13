@@ -16,7 +16,7 @@
 
 					<?php while ( bp_profile_fields() ) : bp_the_profile_field(); ?>
 
-						<?php if ( bp_field_has_data() ) : ?>
+						<?php if ( bp_field_has_data() && (bp_get_the_profile_field_name() != 'First Name') && (bp_get_the_profile_field_name() != 'Last Name') ) : ?>
 
 							<tr<?php bp_field_css_class(); ?>>
 
@@ -31,6 +31,21 @@
 						<?php do_action( 'bp_profile_field_item' ); ?>
 
 					<?php endwhile; ?>
+
+					<?php if ( bp_has_groups( bp_ajax_querystring( 'groups' ) ) ) : ?>
+					
+						<?php while ( bp_groups() ) : bp_the_group(); ?>
+
+						<tr<?php bp_field_css_class(); ?>>
+	
+							<td class="label">Class</td>
+	
+							<td class="data"><a href="<?php bp_group_permalink(); ?>"><?php bp_group_name(); ?></a></td>
+	
+						</tr>
+
+						<?php endwhile; ?>
+					<?php endif; ?>
 
 				</table>
 			</div>

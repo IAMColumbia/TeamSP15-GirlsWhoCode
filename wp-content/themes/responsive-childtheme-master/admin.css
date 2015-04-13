@@ -1,0 +1,23 @@
+#adminmenu, #adminmenuwrap {
+	background-color: #34c0c4;
+}
+
+#adminmenu a {
+	color: #fff;
+}
+
+#adminmenu a:hover {
+	color: red;
+}
+
+#adminmenu .wp-menu-name:hover {
+	background-color: #fff;
+}
+
+#wpcontent {
+	background-color: #fff;
+}
+
+.wp-menu-open .wp-menu-name {
+	background-color: red;
+}

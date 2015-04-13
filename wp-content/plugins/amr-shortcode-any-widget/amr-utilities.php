@@ -81,7 +81,7 @@ global $wp_registered_sidebars, $wp_registered_widgets, $_wp_sidebars_widgets;
 			$found = false;
 			foreach ($_wp_sidebars_widgets as $i=> $w) {
 				if (($i == "widgets_for_shortcodes")) {
-				echo 'Sidebar:&nbsp;<b>'.$i.': '.amr_get_sidebar_name($i).'</b> has widgets: <br />';
+				echo 'Sidebar:&nbsp;<b>'.$i.': '.amr_get_sidebar_name($i).'</b> has widgets with these ids: <br />';
 				$found = true;
 				if (is_array($w)) {
 					sort ($w);
