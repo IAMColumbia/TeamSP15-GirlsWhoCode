@@ -1,23 +1,60 @@
-#adminmenu, #adminmenuwrap {
+#wpwrap {
+	background: url(http://www.goodspark.com/gwc/wp-content/uploads/2015/02/seamless-pattern-of-circuit-board-grey-2370.png) repeat;
+	background-size: 200px;
+	font-family: "Dosis", "Open Sans", sans-serif;
+}
+
+#adminmenuback,
+#adminmenuwrap,
+#adminmenu {
 	background-color: #34c0c4;
 }
 
-#adminmenu a {
+#adminmenu a:hover,
+#adminmenu li.menu-top > a:focus,
+#collapse-menu:hover,
+#adminmenu a,
+#collapse-menu,
+#adminmenu div.wp-menu-image:before,
+#collapse-button div:after,
+#adminmenu li.wp-has-current-submenu a.wp-has-current-submenu:hover {
 	color: #fff;
 }
 
-#adminmenu a:hover {
-	color: red;
+#collapse-menu:hover,
+#adminmenu .wp-menu-name:hover,
+#adminmenu .wp-menu-name:active,
+#adminmenu .wp-menu-name:target,
+#adminmenu .wp-menu-name:focus,
+#adminmenu .wp-has-current-submenu .wp-submenu,
+.no-js li.wp-has-current-submenu:hover .wp-submenu,
+#adminmenu a.wp-has-current-submenu:focus + .wp-submenu,
+#adminmenu .wp-has-current-submenu .wp-submenu.sub-open,
+#adminmenu .wp-has-current-submenu.opensub .wp-submenu  {
+	background-color: #333;
 }
 
-#adminmenu .wp-menu-name:hover {
+#adminmenu .wp-submenu a:hover,
+#adminmenu .wp-submenu a:focus {
+	color: #ffcb08;
+}
+
+.wp-menu-open .wp-menu-name,
+#adminmenu li.current a.menu-top,
+#adminmenu li.wp-has-current-submenu a.wp-has-current-submenu {
+	background-color: #d54e21;
+}
+
+.folded #adminmenu li.wp-has-current-submenu,
+#adminmenu .wp-has-current-submenu .wp-submenu .wp-submenu-head {
 	background-color: #fff;
 }
 
-#wpcontent {
-	background-color: #fff;
+#wpadminbar .quicklinks .ab-top-secondary #wp-admin-bar-wp-custom-logout {
+	margin-right: 20px;
 }
 
-.wp-menu-open .wp-menu-name {
-	background-color: red;
+#adminmenu .wp-menu-image img {
+	opacity: 1;
 }
+

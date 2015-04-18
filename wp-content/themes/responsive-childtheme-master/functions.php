@@ -1,5 +1,7 @@
 <?php
 
+add_image_size( 'featured-project', 425, 325, true );
+
 add_filter('widget_text', 'do_shortcode');
 
 add_action( 'wp_enqueue_scripts', 'child_add_scripts' );
@@ -32,6 +34,12 @@ function modify_admin_bar($wp_admin_bar) {
 	$wp_admin_bar->remove_node('new-content');
 	$wp_admin_bar->remove_node('my-account');
 	$wp_admin_bar->remove_node('search');
+	$wp_admin_bar->add_menu( array(
+        'id'    => 'wp-custom-logout',
+        'title' => 'Logout',
+        'parent'=> 'top-secondary',
+        'href'  => wp_logout_url()
+    ) );
 }
 
 function get_user_role( $user_id ){
@@ -121,17 +129,10 @@ function bp_get_custom_options_nav( $parent_slug = '' ) {
 	}
 }
 
+function theme_name_scripts() {
+	wp_enqueue_style( 'danielle.css', get_stylesheet_uri() );
+}
 
-
-bp_core_new_nav_item( 
-    array( 
-        'name' => __('Classes', 'buddypress'), 
-        'slug' => 'classes', 
-        'position' => 50, 
-        'show_for_displayed_user' => true, 
-        'screen_function' => 'groups_screen_group_admin', 
-        'default_subnav_slug' => 'Classes', 
-        'item_css_id' => $bp->messages->id 
-    ));
+add_action( 'theme_name_scripts' );
 
 ?>

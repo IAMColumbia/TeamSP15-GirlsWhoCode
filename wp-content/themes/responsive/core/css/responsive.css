@@ -199,17 +199,23 @@
 		background-color: #34c0c4;
 	}
 
+	#responsive_current_menu_item{
+		width:50%;
+	}
+
 	.js .main-nav a#responsive_menu_button {
 		display: block;
 		position: absolute;
 		top: 0;
-		left: 100%;
+		left: 58%;
 		width: 23px;
 		height: 30px;
 		margin-left: -30px;
 		background: url("../images/select-icons.png") 0 5px no-repeat;
 		cursor: pointer;
 	}
+
+	
 
 	.js .main-nav a#responsive_menu_button.responsive-toggle-open {
 		background: url("../images/select-icons.png") 0 -46px no-repeat;
@@ -249,6 +255,10 @@
 	#footer .social-icons {
 		padding-bottom: 10px;
 		text-align: center;
+	}
+
+	a#responsive_menu_button{
+		left: 55%;
 	}
 }
 
@@ -315,6 +325,10 @@
 
 	#footer .social-icons {
 		text-align: center;
+	}
+
+	#login-trigger{
+		top:181px;
 	}
 }
 

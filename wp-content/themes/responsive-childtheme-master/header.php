@@ -34,7 +34,7 @@ if ( !defined( 'ABSPATH' ) ) {
 	<head>
 
 		<meta charset="<?php bloginfo( 'charset' ); ?>"/>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="viewport" content="width=450, initial-scale=1.0">
 
 		<title><?php wp_title( '&#124;', true, 'right' ); ?></title>
 
@@ -46,7 +46,12 @@ if ( !defined( 'ABSPATH' ) ) {
 
 
 		<?php wp_head(); ?>
-		<!--<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/custom.css" type="text/css" media="all">-->
+		<link rel="stylesheet" type="text/css" href="/gwc/wp-content/themes/responsive-childtheme-master/mark.css" media="screen" />
+		<link rel="stylesheet" type="text/css" href="/gwc/wp-content/themes/responsive-childtheme-master/rebecca.css" media="screen" />
+		<link rel="stylesheet" type="text/css" href="/gwc/wp-content/themes/responsive-childtheme-master/nhStyle.css" media="screen" />
+		<link rel="stylesheet" type="text/css" href="/gwc/wp-content/themes/responsive-childtheme-master/gina.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="/gwc/wp-content/themes/responsive-childtheme-master/vi.css" media="screen" />
+
 	</head>
 
 <body <?php body_class(); ?>>

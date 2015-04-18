@@ -19,7 +19,12 @@
 	<?php do_action( 'bp_members_delete_account_before_submit' ); ?>
 
 	<label>
-		<input type="checkbox" name="delete-account-understand" id="delete-account-understand" value="1" onclick="if(this.checked) { document.getElementById('delete-account-button').disabled = ''; } else { document.getElementById('delete-account-button').disabled = 'disabled'; }" />
+		<input type="checkbox" name="delete-account-understand" id="delete-account-understand" value="1" 
+		onclick="if(this.checked) 
+		{ document.getElementById('delete-account-button').disabled = '';
+		  document.getElementById('delete-account-button').classList.remove('disabled'); } 
+		else { document.getElementById('delete-account-button').disabled = 'disabled';
+				document.getElementById('delete-account-button').classList.add('disabled'); }" />
 		 <?php _e( 'I understand the consequences.', 'buddypress' ); ?>
 	</label>
 
