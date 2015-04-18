@@ -1,0 +1,141 @@
+/* 
+Theme Name: Responsive Child Theme
+Theme URI: http://cyberchimps.com/guide/child-theme-example/
+Description: Responsive Child Theme
+Template: responsive
+Version: 1.0.0
+Author: CyberChimps
+Author URI: https://cyberchimps.com/
+License: GNU General Public License
+License URI: license.txt
+
+*/
+
+/* =Start From Here
+-------------------------------------------------------------- */
+html, body{
+	overflow-x: hidden;
+}
+#wrapper{
+	background-color: #fff;
+}
+.col-620{
+	width: 95%;
+	margin: 0px auto;
+}
+#buddypress ul.item-list li{
+	border-bottom: none;
+}
+.widget.buddypress #bp-login-widget-form label{
+	color: #fff;
+}
+#footer-wrapper{
+	margin: 0 -9999rem;
+  	/* add back negative margin value */
+  	padding: 0.25rem 9999rem;
+  	height: 120px;
+  	background-color: rgba(52,192,196, 0.8);
+}
+#footer{
+	max-width: 1000px;
+	height: 120px;
+}
+#bp-login-widget-form .input{
+	outline: none;
+	border: none;
+	box-shadow: none;
+	border-radius: 4px;
+	width: 300px;
+	color: #754d25;
+}
+#bp-login-widget-submit{
+	background: #34c0c4; 
+    text-align: center;	
+    letter-spacing: 1px;
+    font-size: 16px;
+    cursor: pointer;
+    -webkit-transition: background-color 0.5s ease;
+    -moz-transition: background-color 0.5s ease;
+    -o-transition: background-color 0.5s ease;
+    transition: background-color 0.5s ease;
+    color:#fff;
+    border-style: solid;
+    border-color: #fff;
+    border-radius: 4px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+#bp-login-widget-submit:hover{
+	background-color: #24878A; 
+}
+#profile-edit-form .editfield{
+	width: 300px;
+	float: left;
+}
+
+.bp-login-widget-user-logout{
+	text-transform: uppercase;
+    -webkit-transition: background-color 0.5s ease;
+    -moz-transition: background-color 0.5s ease;
+    -o-transition: background-color 0.5s ease;
+    transition: background-color 0.5s ease;
+}
+.bp-login-widget-user-logout:hover{
+	background-color: #24878A;
+}
+#buddypress #item-header .avatar{
+	width: 300px;
+	height: 300px;
+}
+.bp_members h1{
+	text-align: center;
+}
+#container{
+	max-width: 1000px;
+	margin: 0 auto;
+}
+#header{
+	margin: 0 -9999rem;
+  	/* add back negative margin value */
+  	padding: 0.9rem 9999rem 0 9999rem;
+	max-width: 1000px;
+}
+.main-nav{
+	margin: 0 -9999rem;
+  	/* add back negative margin value */
+  	padding: 0 9999rem;
+	max-width: 1000px;
+	background-color: #34c0c4;
+	box-shadow: 0 4px 4px 0px rgba(10,10,10,0.1);
+}
+.skip-container{
+	display: none;
+}
+#menu-item-320{
+	margin-right: 20px;
+}
+a{
+	color: #56c6c9;
+	-webkit-transition: color 0.5s ease;
+    -moz-transition: color 0.5s ease;
+    -o-transition: color 0.5s ease;
+    transition: color 0.5s ease;
+}
+a:hover{
+	color: #EE4A33;
+
+}
+.js .main-nav{
+	background-color: #34c0c4; 
+	background-image: none;
+}
+#buddypress ul.item-list{
+	border-top: none;
+}
+
+.item-title.fn{
+	width: 150px;
+}
+
+

@@ -1,0 +1,54 @@
+.responsive_current_menu_item{
+  background-color: #34c0c4;
+}
+
+/* EVENT PAGE STYLE START HERE*/
+.events-table tr{
+border-color: #ff0000;
+}
+
+.event-time{
+font-weight:bold;
+text-align: left;
+}
+
+
+.event-description{
+font-weight:bold;
+text-align: left;
+}
+
+
+.em-search-field label{
+  color: white;
+}
+
+div.css-search{
+background-color:#34c0c4;
+  font-size:16px;
+}
+
+.em-search-options a{
+color: white;
+}
+
+
+th, td, table{
+border: none;
+border-bottom: 1px solid #ddd;
+}
+
+li.event-calendar-widget{
+list-style-type: none;
+}
+
+ul.em-locations-list{
+  list-style-type: none;
+}
+
+.post-meta{
+ display: none;
+}
+
+
+/* END EVENT PAGE STYLE */

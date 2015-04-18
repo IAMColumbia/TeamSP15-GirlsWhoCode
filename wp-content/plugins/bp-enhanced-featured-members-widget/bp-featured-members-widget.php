@@ -58,10 +58,13 @@ class BP_Featured_Members_Widget extends WP_Widget {
 						
 						<div class="item">
 							<div class="item-title fn">
-								<a href="<?php echo bp_core_get_user_domain( $member_id ) ?>" title="<?php echo bp_core_get_user_displayname( $member_id ) ?>"><?php echo bp_core_get_user_displayname( $member_id ) ?></a>
-                            </div>
-                            <a href="<?php echo bp_core_get_user_domain( $member_id ) ?>"><?php echo xprofile_get_field_data( 'Program City', $member_id ); ?></a>
-					<a href="<?php echo bp_core_get_user_domain( $member_id ) ?>"><?php echo xprofile_get_field_data( 'Program Year', $member_id ); ?></a>
+								<a href="<?php echo bp_core_get_user_domain( $member_id ) ?>" title="<?php echo bp_core_get_user_displayname( $member_id ) ?>"><?php echo bp_core_get_user_displayname( $member_id ) ?>
+                            
+                            
+									<?php echo xprofile_get_field_data( 'Program City', $member_id ); ?>
+                                    <?php echo xprofile_get_field_data( 'Program Year', $member_id ); ?>
+                                </a>
+                    		</div>
 						</div>
 						
 					

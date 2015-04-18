@@ -10,7 +10,13 @@
 
 			<div class="bp-widget <?php bp_the_profile_group_slug(); ?>">
 
-				<h4><?php bp_the_profile_group_name(); ?></h4>
+				<!--<h4><?php bp_the_profile_group_name(); ?></h4>-->
+				<?php if ( bp_has_groups( bp_ajax_querystring( 'groups' ) ) ) : ?>
+					
+						<?php while ( bp_groups() ) : bp_the_group(); ?>
+							<h3><a href="<?php bp_group_permalink(); ?>"><?php bp_group_name(); ?></a></h3>										<?php endwhile; ?>
+					<?php endif; ?>
+
 
 				<table class="profile-fields">
 
@@ -32,20 +38,6 @@
 
 					<?php endwhile; ?>
 
-					<?php if ( bp_has_groups( bp_ajax_querystring( 'groups' ) ) ) : ?>
-					
-						<?php while ( bp_groups() ) : bp_the_group(); ?>
-
-						<tr<?php bp_field_css_class(); ?>>
-	
-							<td class="label">Class</td>
-	
-							<td class="data"><a href="<?php bp_group_permalink(); ?>"><?php bp_group_name(); ?></a></td>
-	
-						</tr>
-
-						<?php endwhile; ?>
-					<?php endif; ?>
 
 				</table>
 			</div>

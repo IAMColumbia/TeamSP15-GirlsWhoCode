@@ -62,14 +62,11 @@
 
 			<div class="item">
 				<div class="item-title">
-					<a href="<?php bp_member_permalink(); ?>"><?php bp_member_profile_data( 'field=First Name' ); ?></a>
-                </div>
-                <div class="item-program-city-and-year">
-					<a id="item-program-city" href="<?php bp_member_permalink(); ?>"><?php bp_member_profile_data( 'field=Program City' ); ?></a>
-					<a id="item-program-year" href="<?php bp_member_permalink(); ?>"><?php bp_member_profile_data( 'field=Program Year' ); ?></a>
-                </div>
-					
-
+					<a href="<?php bp_member_permalink(); ?>">
+						<div class="member-name"><?php bp_member_profile_data( 'field=First Name' ); ?></div>            
+						<div class="member-city-year"><?php bp_member_profile_data( 'field=Program City' ); ?> <?php bp_member_profile_data( 'field=Program Year' ); ?></div>
+                    </a>
+               </div>
 			<!-- <div class="item-meta"><span class="activity"><?php //bp_member_last_active(); ?></span></div> -->
 
 				<?php do_action( 'bp_directory_members_item' ); ?>

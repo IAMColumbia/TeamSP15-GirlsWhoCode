@@ -1,0 +1,385 @@
+#container {
+	min-width: 450px;
+}
+
+#wrapper {
+	width: 95%;
+	min-width: 450px;
+}
+
+.top-widget {
+	width: auto;
+}
+
+.menu > li:first-child {
+	margin-right: 10px;
+}
+
+.bp-login-widget-user-links,
+.widget.buddypress .bp-login-widget-user-links > div  {
+	padding-left: 0;
+}
+
+.bp-login-widget-user-logout {
+	z-index: 15000;
+	background: #34c0c4; 
+    text-align: center;	
+    letter-spacing: 1px;
+    font-size: 16px;
+    cursor: pointer;
+    -webkit-transition: background-color 0.5s ease;
+    -moz-transition: background-color 0.5s ease;
+    -o-transition: background-color 0.5s ease;
+    transition: background-color 0.5s ease;
+    color:#fff;
+    border: 2px solid #fff;
+    border-radius: 4px;
+    outline: none;
+}
+
+.bp-login-widget-user-logout a {
+	color: #fff;
+	margin: 7px;
+	font-weight: 600;
+}
+
+.badgeos-achievements-list-item .badgeos-item-image {
+	opacity: 1 !important;
+}
+
+
+
+#buddypress ul.item-list {
+	margin-left: 0;
+}
+
+#buddypress #members-list li,
+#groups-dir-list ul.item-list li {
+ 	margin: 0 2%;
+ 	min-height: 230px;
+  	overflow: hidden;
+	text-align: center;
+}
+
+#featured-members-list li.vcard {
+	min-height: 230px;
+}
+
+#featured-members-list li.vcard .item-avatar {
+	text-align: center;
+}
+
+#featured-members-list li.vcard .item .item-title.fn {
+	width: 100%;
+	margin-top: 5px;
+}
+
+#groups-dir-list ul.item-list li {
+	max-height: 290px;
+}
+
+#members-dir-list ul.item-list li .item-avatar,
+#groups-dir-list ul.item-list li .item-avatar {
+	margin: 0 auto 12px;
+}
+
+
+
+#buddypress #members-list li .member-name {
+ 	font-size: 1.5em;
+ 	margin-bottom: 0;
+}
+
+#buddypress ul.item-list li div.item-desc {
+	width: 100%;
+	line-height: 1rem;
+	margin: 0;
+}
+
+#buddypress ul.item-list li div.item-desc p {
+	margin: 0;
+}
+
+#login-trigger {
+	font-family: "dosis", sans-serif;
+  	font-weight: 700;
+  	letter-spacing: 2px;
+}
+
+/*center profile picture */
+#buddypress div#item-header {
+	text-align: center;
+}
+
+#buddypress div#item-header img.avatar {
+	float: none;
+	margin: 10px 0;
+}
+
+.menu-item.current-menu-item > a {
+	color: #d54e21;
+}
+
+
+
+/*********************************************
+/*
+/*				Media Queries
+/*
+/*********************************************/
+
+/*mobile*/
+@media(max-width: 650px) {
+
+	#login-trigger {
+		top: 96px;
+		border: none;
+		right: 10px;
+	}
+
+	#bp-login-widget-form {
+		top: 100px;
+	}
+
+	#logo img {
+		width: 110px;
+	}
+
+	.span_directory {
+		font-size: 18px;
+		letter-spacing: 10px;
+		line-height: 45px;
+	}
+
+	.title_top {
+		font-size: 16px;
+		letter-spacing: 2.8px;
+		text-align: left;
+	}
+
+	.bp-login-widget-user-link {
+		display: none;
+	}
+
+	.widget.buddypress .bp-login-widget-user-avatar {
+		float: none;
+		position: absolute;
+	    right: 28px;
+	    top: 0;
+	    margin: 0;
+	}
+
+	.bp-login-widget-user-logout {
+		position: absolute;
+		top: 72px;
+		right: 12px;
+	}
+
+	.js .main-nav {
+		height: 40px;
+	}
+
+	.js .main-nav #responsive_current_menu_item {
+		display: none;
+	}
+
+	.js .main-nav a#responsive_menu_button {
+		left: 10px;
+		margin-left: 0;
+		background-size: cover;
+		width: 32px;
+	}
+
+	.js .main-nav a#responsive_menu_button.responsive-toggle-open {
+		width: 25px;
+	}
+
+	.js .main-nav .menu {
+		left: 0;
+		top: 40px;
+	}
+
+	#footer-wrapper .grid {
+		text-align: center;
+	}
+
+	#buddypress #members-list li,
+	#groups-dir-list ul.item-list li {
+	 	width: 45%;
+	}
+
+	#featured-members-list li.vcard {
+		margin: 0 1%;
+		width: 44%;
+	}
+}
+
+
+
+/*tablet*/
+@media (min-width: 650px) {
+	#header {
+		margin-top: -10px;
+	}
+
+	#login-trigger {
+		top: 127px;
+		right: 20px;
+	}
+
+	#bp-login-widget-form {
+		top: 161px;
+	}
+
+  	#logo img {
+  	    width: 150px;
+  	}
+
+  	.widget.buddypress .bp-login-widget-user-avatar {
+  		float: none;
+  		text-align: center;
+  		position: static;
+  		margin: 10px;
+  		padding-right: 16px;
+  	}
+
+  	.bp-login-widget-user-links {
+  		text-align: center;
+  		padding-right: 16px;
+  	}
+
+  	.bp-login-widget-user-link {
+  		position: static;
+  		text-align: center;
+	}
+
+    .title_top {
+  	    text-align: left;
+  	    font-size: 26px;
+	    letter-spacing: 2px;
+    }
+
+    .span_directory {
+	    font-size: 28px;
+	    letter-spacing: 12px;
+    }
+
+    .menu > li:first-child {
+		margin-right: 30px;
+	}
+
+    .bp-login-widget-user-logout {
+    	position: absolute;
+        top: 129px;
+		width: 80px;
+		right: 16px;	
+	}
+
+	#buddypress #members-list li,
+	#groups-dir-list ul.item-list li,
+	#featured-members-list li.vcard {
+	 	width: 20%;
+	}
+}
+
+@media (min-width: 650px) and (max-width: 830px) {
+	#buddypress #members-list li,
+	#groups-dir-list ul.item-list li {
+	 	width: 28%;
+	}
+
+	#featured-members-list li.vcard {
+		width: 25%;
+	}
+}
+
+/*desktop*/
+@media(min-width: 1000px) {
+	.menu > li:first-child {
+		margin-right: 10px;
+	}
+
+	#wrapper {
+		width: 100%;
+		max-width: 1000px;
+	}
+
+	#header {
+		margin-top: 0;
+	}
+
+	.title_top {
+  	    text-align: left;
+  	    font-size: 36px;
+	    letter-spacing: 2px;
+    }
+
+    .span_directory {
+	    font-size: 38px;
+	    letter-spacing: 16px;
+    }
+
+    #logo img {
+  	    width: 30%;
+  	}
+
+	#item-header {
+		width: 30%;
+		float: left;
+	}
+
+	#item-body {
+		width: 70%;
+		float: left;
+	}
+
+	#login-trigger {
+		top: 141px;
+		right: 0;
+	}
+
+	#bp-login-widget-form {
+		top: 191px;
+	}
+
+	.widget.buddypress .bp-login-widget-user-avatar {
+		text-align: center;
+		position: static;
+  		margin: 10px;
+  		padding-right: 0;
+	}
+
+	.bp-login-widget-user-links {
+		padding-left: 0;
+		position: relative;
+	 	width: auto;
+	 	margin: 0;
+	 	padding-right: 0;
+	}
+
+	.bp-login-widget-user-link {
+		position: static;
+		text-align: center;
+	}
+
+	.bp-login-widget-user-logout {
+		position: absolute;
+		top: 71px;
+		right: 0;
+	}
+
+	#buddypress #members-list li,
+	#groups-dir-list ul.item-list li,
+	#featured-members-list li.vcard  {
+		width: 16%;
+	}
+ 
+
+	#buddypress #members-list li:nth-of-type(5n+1),
+	#groups-dir-list ul.item-list li:nth-of-type(5n+1),
+	#featured-members-list li.vcard:nth-of-type(5n+1) { 
+	    clear: left; 
+	}
+
+}
+

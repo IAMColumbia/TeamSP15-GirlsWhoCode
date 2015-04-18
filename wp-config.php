@@ -69,7 +69,11 @@ $table_prefix = 'wp_oduk_';
  * in their development environments.
  */
 define('WP_DEBUG', false);
+define ( 'BP_XPROFILE_SLUG', 'myvalue' );
+
+define( 'BP_SETTINGS_SLUG', 'grr' );
 define( "BP_GROUPS_SLUG", "classes" );
+define( 'BP_DEFAULT_COMPONENT', 'classes');
 
 /* That's all, stop editing! Happy blogging. */
 
